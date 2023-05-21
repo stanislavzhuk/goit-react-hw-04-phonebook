@@ -59,11 +59,9 @@ const App = () => {
           <Filter
             value={filter}
             onChange={onFilterChange} />
-        
           <ContactList
             contacts={filterContact(filter)}
             onDelete={deleteContact} />
-        
         </>
       ) : (
         <Info>No any contacts</Info>
